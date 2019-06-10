@@ -1,0 +1,12 @@
+.c-about {
+    @extend %rel; z-index: 1;
+    margin-bottom: 100px;
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        margin-bottom: 50px;
+    }
+    
+    .o-header {
+        text-align: center;
+    }
+}

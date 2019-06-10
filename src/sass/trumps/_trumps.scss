@@ -1,0 +1,33 @@
+.is-hidden {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.u-cover {
+    transition: all 500ms ease-out;
+    opacity: 1;
+    
+    .is-loaded & {
+        opacity: 0;
+    }
+}
+
+// Anim
+
+.anim {
+    transition: all 600ms ease-out;
+    opacity: 0;
+
+    
+    &--up {
+        transform: translate3d(0, 50px, 0);
+    }
+    
+    &--visible {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}

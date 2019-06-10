@@ -1,0 +1,43 @@
+@import 'settings/colors.scss';
+@import 'settings/global.scss';
+
+@import 'tools/clear';
+@import 'tools/functions';
+@import 'tools/mixins';
+@import 'tools/blazy';
+@import 'tools/glide';
+@import 'tools/glightbox';
+
+@import 'generic/reset';
+@import 'generic/box-sizing';
+
+@import 'elements/extends';
+@import 'elements/fonts';
+@import 'elements/form';
+@import 'elements/media';
+@import 'elements/page';
+@import 'elements/typography';
+
+@import 'objects/btn';
+@import 'objects/cols';
+@import 'objects/container';
+@import 'objects/hamburger';
+@import 'objects/header';
+@import 'objects/icons';
+@import 'objects/logo';
+@import 'objects/wrap';
+
+@import 'components/about.scss';
+@import 'components/contact.scss';
+@import 'components/footer.scss';
+@import 'components/gallery.scss';
+@import 'components/gotop.scss';
+@import 'components/grid.scss';
+@import 'components/homecarousel.scss';
+@import 'components/lang.scss';
+@import 'components/map.scss';
+@import 'components/nav.scss';
+@import 'components/top.scss';
+
+
+@import 'trumps/trumps';

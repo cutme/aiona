@@ -1,0 +1,110 @@
+.c-grid {
+    @extend %flex;
+    @extend %flex-wrap;
+    @extend %rel;
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        width: calc(100% + 16px);
+        margin: 0 -8px;
+    }
+    
+    &:after {
+        @extend %abs;
+        right: 0; top: -290px; z-index: -1;
+        display: inline-block;
+        font: {
+            family: $icomoon;
+            size: rem(900);
+        }
+        content: "\e900";
+        transform: translateX(50%);
+        color: $c-gray2;
+    }    
+
+    &__item {
+        width: grid(406);
+        padding: 8px;
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            width: 50%;
+        }
+        
+        @media screen and ( max-width: $smartphone_portrait + px ) {
+            width: 100%;
+        }
+    }
+    
+    &__inside {
+        @extend %rel;
+        height: 100%;
+        background-color: white;
+        padding: 40px 30px;
+        box-shadow: rgba(black, .22) 0 0 18px;
+        text-align: center;
+        
+        @media screen and ( max-width: $tablet + px ) {
+            padding: 30px 20px;
+        }
+        
+        & > [class^="icon-"] {
+            display: inline-block;
+            height: 66px;
+            margin-bottom: 20px;
+            font-size: rem(66);
+            vertical-align: sub;
+            color: $c-yellow;
+
+            &.icon-clock {
+                font-size: rem(56);
+            }
+            
+            &.icon-warranty,
+            &.icon-certificate,
+            &.icon-price {
+                font-size: rem(56);
+            }
+        }
+        
+        p {
+            @media screen and ( max-width: $tablet + px ) {
+                font-size: rem(14);
+            }
+            
+            @media screen and ( max-width: $smartphone_portrait + px ) {
+                font-size: rem(11.31);
+            }
+        }
+    }
+
+    &__sticker {
+        @extend %abs;
+        z-index: -1;
+        right: 20px; top: 80px;
+        padding-bottom: 60px;
+        
+        & > [class^="icon-"] {
+            font-size: rem(140);
+            color: $c-gray1;
+            
+            &.icon-certificate {
+                font-size: rem(100);
+            }
+            
+            &.icon-clock,
+            &.icon-price,
+            &.icon-transport {
+                font-size: rem(120);
+            }
+
+            &.icon-warranty {
+                font-size: rem(110);
+            }
+        }
+    }
+    
+    .o-header {
+        &--third {
+            text-transform: uppercase;
+        }
+    }
+}

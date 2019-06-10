@@ -1,0 +1,10 @@
+.o-cols {
+    
+    @media screen and ( min-width: $tablet_portrait + 1px ) {
+        display: flex;
+        
+        &__item {
+            width: 50%;
+        }
+    }
+}

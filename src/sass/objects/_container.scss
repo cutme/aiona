@@ -1,0 +1,8 @@
+.o-container {
+    padding-top: 160px;
+    overflow: hidden;
+    
+    @media screen and ( max-width: $smartphone + px ) {
+        padding-top: 64px;
+    }
+}

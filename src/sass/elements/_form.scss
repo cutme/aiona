@@ -1,0 +1,120 @@
+button, input, textarea {
+	background-color: transparent;
+	border: none;
+	border-color: inherit;
+	border-radius: 0;
+	font-family: $text;
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+input, textarea {
+	width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	text-rendering: optimizeLegibility; 
+	
+	font: {
+		family: $text;
+	}
+	cursor: text;
+	color: inherit;
+}
+
+input {
+	&[disabled],
+	&[readonly] {
+		opacity: .5;
+	}
+}
+
+input {
+	&[type=text],
+	&[type=email],
+	&[type=tel] {
+		width: 100%;
+	}
+}
+
+textarea {
+	overflow: auto;
+	resize: none;
+}
+
+:invalid {
+  box-shadow: none;
+}
+
+:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+:-moz-ui-invalid {
+  box-shadow:none;
+}
+        
+::-webkit-input-placeholder {color: $c-primary; text-overflow:ellipsis;}
+:-moz-placeholder {color: $c-primary; text-overflow:ellipsis;}
+::-moz-placeholder {color: $c-primary; text-overflow:ellipsis;}
+:-ms-input-placeholder { color: $c-primary; text-overflow:ellipsis;}
+
+
+.form-field {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    padding: 0 40px;
+    font: {
+        size: rem(14);
+        weight: $bold;
+    }
+    color: $c-primary;
+    
+    @media screen and ( max-width: + $smartphone_portrait + px ) {
+        font-size: rem(12);
+    }
+    
+   /*
+ .has-error & {
+
+    }
+    
+    &:focus {
+        background-color: white;
+    }
+*/
+}
+
+textarea.form-field {
+    padding: {
+        top: 20px;
+        bottom: 20px;
+    }
+    height: 200px;
+}
+
+.form-row {
+   // @media screen and ( min-width: $smartphone_portrait + 1px ) {
+        display: flex;
+        width: 100%;
+   // }
+}
+
+.form-group {
+    margin-bottom: 25px;
+    padding: 0 20px;
+    
+   // @media screen and ( min-width: $smartphone_portrait + 1px ) {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+   // }
+}
+
+label {
+    cursor: pointer;
+    //display: block;
+}

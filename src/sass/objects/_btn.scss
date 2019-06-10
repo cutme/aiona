@@ -1,0 +1,37 @@
+.o-btn {
+    @extend %anim;
+    display: inline-flex;
+    @extend %flex-xy;
+    @extend %rel;
+    height: 50px;
+    white-space: nowrap;
+    padding: 0 40px;
+    font: {
+        family: $text;
+        size: rem(22.21);
+    }
+
+	&--outline {
+        border: 2px solid $c-blue1;
+        text-transform: uppercase;
+    }
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        height: 40px;
+        padding: 0 20px;
+        font-size: rem(18);
+    }
+}
+
+a.o-btn,
+button.o-btn {
+    
+    &--outline {
+        &:hover {   
+            .desktop & {
+                background-color: $c-blue1;
+                color: white;
+            }
+        }
+    }
+}

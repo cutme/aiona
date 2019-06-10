@@ -1,0 +1,60 @@
+.c-gallery {
+    
+    
+    &__items {
+        @extend %flex;
+        @extend %flex-wrap;
+    }
+
+    &__item {
+        @extend %rel;
+        width: grid(640, 1920);
+        
+        &:after {
+            @extend %abs;
+            @extend %abs-xy;
+            @extend %abs-after;
+            @extend %flex;
+            @extend %flex-xy;
+            @extend %anim;
+            font-family: $icomoon;
+            width: calc(100% - 100px);
+            height: calc(100% - 100px);
+            border: 2px solid white;
+            font-size: rem(60);
+            opacity: 0;;
+            color: white;
+            content: "\e90c";
+            
+            @media screen and ( max-width: $base + px ) {
+                width: calc(100% - 50px);
+                height: calc(100% - 50px);
+            }
+            
+            @media screen and ( max-width: $tablet + px ) {
+                width: calc(100% - 25px);
+                height: calc(100% - 25px);
+            }
+            
+            @media screen and ( max-width: $tablet_portrait + px ) {
+                display: none;
+            }
+        }
+
+        &--smaller {
+            width: grid(590, 1920);
+        }
+        
+        &--bigger {
+            width: grid(740, 1920);
+        }
+        
+        &:hover {
+            .desktop & {
+                &:after {
+                    opacity: .6;
+                }
+            }
+        }
+    }
+}

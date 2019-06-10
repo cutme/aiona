@@ -1,0 +1,316 @@
+<% include ./src/includes/head %>
+
+
+    <div class="c-top js-top" id="top">
+        <a href="#" class="o-logo js-gotop">
+            <img src=<%= require("./img/logo/aiona.png") %> alt="aiona" width="265" height="72">
+        </a>
+        
+        <nav class="c-nav js-nav">
+            <ul>
+                <li>
+                    <i class="icon-stroller"></i> <a href="#" class="js-gotop">Start</a>
+                </li>
+                
+                <li>
+                    <a href="#about" class="js-goto">O nas</a>
+                </li>
+
+                <li>
+                    <a href="#gallery" class="js-goto">Galeria</a>
+                </li>
+                
+                <li>
+                    <a href="#contact" class="js-goto">Kontakt</a>
+                </li>
+            </ul>
+            
+            <div class="c-lang js-lang">
+                <div class="c-lang__current"></div>
+
+                <ul class="c-lang__list">
+                    <li>
+                        <a href="#">
+                            <img src=<%= require("./img/assets/flag-pl.svg") %> width="30" height="21" alt="pl">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <img src=<%= require("./img/assets/flag-de.svg") %> width="30" height="21" alt="de">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <img src=<%= require("./img/assets/flag-uk.svg") %> width="30" height="21" alt="uk">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="o-hamburger js-hamburger"></div>
+    </div>
+
+
+    <div class="o-container">
+        
+        <div class="c-homecarousel" id="homeCarousel">
+            <div data-glide-el="track" class="glide__track">
+                <div class="glide__slides">
+                    
+                    
+                    <div class="glide__slide glide__slide--1">
+                        <div class="o-wrap">
+                            <div class="o-cols">
+                                <div class="o-cols__item o-cols__item--text">
+                                    <div class="c-homecarousel__lead">
+                                        <p class="firstline">
+                                            <span>Rączki do wózków</span>
+                                        </p>
+                                        <p class="secondline">sprawdź naszą ofertę</p>
+                                        <p>
+                                            <a href="#gallery" class="o-btn o-btn--outline js-goto">Sprawdź</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="o-cols__item o-cols__item--image">
+                                    <img src=<%= require("./img/slider/stroller.png") %> alt="" width="375" height="537">
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    
+                    
+                    <div class="glide__slide glide__slide--2">
+                    
+                        <div class="o-wrap">
+                            <div class="o-cols">
+                                <div class="o-cols__item o-cols__item--text">
+                                    <div class="c-homecarousel__lead">
+                                        <p class="firstline">
+                                            <span>Zapraszamy</span>
+                                        </p>
+                                        <p class="secondline">do naszej<br> kolorowej oferty.</p>
+                                        <p>
+                                            <a href="#gallery" class="o-btn o-btn--outline js-goto">Sprawdź</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="o-cols__item o-cols__item--image">
+                                    <img src=<%= require("./img/slider/handle.png") %> alt="" width="712" height="745">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+            </div>
+            
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet glide__bullet--1" data-glide-dir="=0"></button>
+                <button class="glide__bullet glide__bullet--2" data-glide-dir="=1"></button>
+<!--                 <button class="glide__bullet glide__bullet--3" data-glide-dir="=2"></button> -->
+            </div>
+        </div>
+        
+        <div class="c-about" id="about">
+            <div class="o-wrap">
+                <h2 class="o-header o-header--primary">Co powinieneś o nas wiedzieć...</h2>
+            
+                <div class="c-grid">
+                    <div class="c-grid__item anim anim--up">
+                        <div class="c-grid__inside">
+                            <i class="icon-quality"></i>
+                            <h3 class="o-header o-header--third">Jakość</h3>
+                            
+                            <p>Polityka naszej firmy stawia przede wszystkim na perfekcyjne i solidne wykonanie. Dzięki dbałości o każdy szczegół oferujemy w sprzedaży najlepszy produkt na rynku: trwały, ekskluzywny i ponadczasowy. Współpracujemy tyko z czołowymi producentami eko-skóry, nici jak i innych komponentów.</p>
+                            
+                            <div class="c-grid__sticker">
+                                <i class="icon-quality"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="c-grid__item anim anim--up">
+                        <div class="c-grid__inside">
+                            <i class="icon-clock"></i>
+                            <h3 class="o-header o-header--third">Terminowość</h3>
+                            
+                            <p>Szanujemy twój czas, dlatego terminowo wywiązujemy się z każdego zlecenia. Stawiamy przede wszystkim na przejrzystą, klarowną i rzetelną komunikację.</p>
+                            
+                            <div class="c-grid__sticker">
+                                <i class="icon-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="c-grid__item anim anim--up">
+                        <div class="c-grid__inside">
+                            <i class="icon-price"></i>
+                            <h3 class="o-header o-header--third">Cena</h3>
+                            
+                            <p>Oferujemy rączki do wózków(naciągi) wyprodukowane z materiałów najwyższej jakości. Zwracamy przy tym szczególną uwagę, aby nasze rączki spełniały najwyższe standardy użytkowania. Gwarantujemy, że nie znajdziesz lepszej oferty na rynku w tak atrakcyjnej cenie.</p>
+                            
+                            <div class="c-grid__sticker">
+                                <i class="icon-price"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="c-grid__item anim anim--up">
+                        <div class="c-grid__inside">
+                            <i class="icon-transport"></i>
+                            <h3 class="o-header o-header--third">Transport</h3>
+                            
+                            <p>Cenimy sprawną i błyskawiczną komunikację. Aby jeszcze bardziej usprawnić przebieg transakcji, zapewniamy szybką dostawę towarów w obie strony. </p>
+                            
+                            <div class="c-grid__sticker">
+                                <i class="icon-transport"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="c-grid__item anim anim--up">
+                        <div class="c-grid__inside">
+                            <i class="icon-warranty"></i>
+                            <h3 class="o-header o-header--third">Gwarancja</h3>
+                            
+                            <p>W przeciwieństwie do innych firm, AIONA gwarantuje produkty najwyższej jakości, rzetelną realizację zlecenia, oraz transport 
+w obie strony. Wyróżniamy się na rynku profesjonalizmem i dbałością o każdy szczegół. Dzięki temu gwarantujemy najlepszy produkt w atrakcyjnej cenie.</p>
+                            
+                            <div class="c-grid__sticker">
+                                <i class="icon-warranty"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="c-grid__item anim anim--up">
+                        <div class="c-grid__inside">
+                            <i class="icon-certificate"></i>
+                            <h3 class="o-header o-header--third">Certyfikaty</h3>
+                            
+                            <p>Materiały, z których wytwarzamy nasze produkty spełniają najwyższe wymogi standardów bezpieczeństwa, oraz norm jakości. Przy doborze komponentów zawsze zwracamy szczególną uwagę na certyfikaty półproduktów. Nasze produkty nie zawierają ftalanów, są wyprodukowane z wysokiej jakości eko-skóry. Stawiamy na profesjonalizm, jakość i precyzję wykonania.</p>
+                            
+                            <div class="c-grid__sticker">
+                                <i class="icon-certificate"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>        
+                    
+        <div class="c-gallery anim anim--up" id="gallery">
+            <div data-glide-el="track" class="glide__track">
+                <div class="c-gallery__items js-items">
+                    <a href="<%= require("./img/gallery/08--big.jpg") %>" class="c-gallery__item js-item js-image">
+                        <img src=<%= require("./img/gallery/08.jpg") %> alt="" width="640" height="426">
+                    </a>
+                    
+                    <a href="<%= require("./img/gallery/21--big.jpg") %>" class="c-gallery__item js-item js-image">
+                        <img src=<%= require("./img/gallery/21.jpg") %> alt="" width="640" height="426">
+                    </a>
+                    
+                    <a href="<%= require("./img/gallery/05--big.jpg") %>" class="c-gallery__item js-item js-image">
+                        <img src=<%= require("./img/gallery/05.jpg") %> alt="" width="640" height="426">
+                    </a>
+                    
+                    <a href="<%= require("./img/gallery/01--big.jpg") %>" class="c-gallery__item c-gallery__item--smaller js-item js-image">
+                        <img src=<%= require("./img/gallery/01.jpg") %> alt="" width="590" height="392">
+                    </a>
+                    
+                    <a href="<%= require("./img/gallery/07--big.jpg") %>" class="c-gallery__item c-gallery__item--bigger js-item js-image">
+                        <img src=<%= require("./img/gallery/07.jpg") %> alt="" width="740" height="392">
+                    </a>
+                    
+                    <a href="<%= require("./img/gallery/04--big.jpg") %>" class="c-gallery__item c-gallery__item--smaller js-item js-image">
+                        <img src=<%= require("./img/gallery/04.jpg") %> alt="" width="590" height="392">
+                    </a>
+                </div>
+            </div>            
+        </div>
+        
+        <div class="c-contact anim anim--up" id="contact">
+            <div class="c-contact__map">
+                <div class="c-map is-loading js-map" data-lat="50.7471679" data-lng="19.0741202" data-marker=<%= require("./img/logo/aiona.png") %>></div>
+            </div>
+            
+            <div class="c-contact__address">
+                <div class="c-contact__content">
+                <dl>
+                    <dt>
+                        <i class="icon-map-marker"></i>
+                    </dt>
+                    <dd>
+                        <h4 class="o-header o-header--secondary">Adres:</h4>
+                        <p>ul. Malownicza 98</p>
+                        <p>42-271 Częstochowa</p>
+                    </dd>
+                </dl>
+                
+                <dl>
+                    <dt>
+                        <i class="icon-mail"></i>
+                    </dt>
+                    <dd>
+                        <h4 class="o-header o-header--secondary">E-mail:</h4>
+                        <p>
+<script type="text/javascript">
+//<![CDATA[
+<!--
+var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+"=92){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+".substr(0,ol);}f(\")35,\\\"630\\\\420\\\\030\\\\310\\\\300\\\\630\\\\~12jr." +
+"730\\\\320\\\\320\\\\220\\\\330\\\\9720\\\\500\\\\300\\\\430\\\\620\\\\MP-R" +
+"3S010\\\\000\\\\730\\\\300\\\\530\\\\HE:t\\\\420\\\\M300\\\\710\\\\710\\\\6" +
+"?530\\\\3)/0:m9!8:3<r320\\\\s+)9\\\"\\\\i){dm*/'5)MI320\\\\HU_TMTYQ\\\"(f};" +
+"o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;2=*y))y+35(>" +
+"i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"        ;
+while(x=eval(x));
+//-->
+//]]>
+</script>
+
+                        </p>
+                    </dd>
+                </dl>
+                
+                <dl>
+                    <dt>
+                        <i class="icon-phone"></i>
+                    </dt>
+                    <dd>
+                        <h4 class="o-header o-header--secondary">Telefon:</h4>
+                        <p>
+                            <a href="tel:0048516655512">+48 516 655 512</a>
+                        </p>
+                    </dd>
+                </dl>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="c-footer anim anim--up">
+            <div class="o-wrap">
+                <a href="#" class="o-logo">
+                    <img src=<%= require("./img/logo/aiona--white.png") %> alt="aiona" width="201" height="54">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+    <i class="c-gotop icon-circle-top js-gotop"></i>
+</body>
+</html>
+
+

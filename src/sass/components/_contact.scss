@@ -1,0 +1,152 @@
+.c-contact {
+    @extend  %flex;
+    background-color: $c-blue2;
+
+    @media screen and ( max-width: $smartphone + px ) {
+        display: block;
+    }
+    
+    @media screen and ( max-width: $smartphone + px ) {
+        text-align: center;
+    }
+
+    &__address {
+        @extend %flex;
+        @extend %flex-xy;
+        flex-direction: column;
+        padding: 300px 0;
+        
+        @media screen and ( min-width: $smartphone + 1px ) {
+            flex: 1 auto;
+        }
+        
+        @media screen and ( max-width: $base + px ) {
+            padding: get-vw-base(300) 0;
+        }
+        
+        @media screen and ( max-width: $tablet + px ) {
+            padding: get-vw-base(150) 0;
+        }
+        
+        @media screen and ( max-width: $smartphone + px ) {
+            padding: 40px 0;
+        }
+
+        a {
+            @extend %ulink;
+            
+            &:before, &:after {
+                background-color: white;
+            }
+        }
+
+        dl {
+            @extend %flex;
+            @extend %flex-y;
+            margin-bottom: 40px;
+            color: white;
+            
+            @media screen and ( max-width: $smartphone + px ) {
+                width: 200px;
+            }
+        }
+        
+        dt {
+            width: 60px;
+            padding-right: 10px;
+            
+            @media screen and ( max-width: $base + px ) {
+                width: get-vw-base(60);
+            }
+        }
+
+        dd {
+            @media screen and ( max-width: $smartphone + px ) {
+                width: 100%;
+            }
+            
+            p {
+                font: {
+                    family: $poppins;
+                    size: rem(25);
+                    weight: $light;
+                }
+                
+                @media screen and ( max-width: $base + px ) {
+                    font-size: get-vw-base(25);
+                }
+                
+                @media screen and ( max-width: $smartphone + px ) {
+                    font-size: rem(14);
+                }
+            }
+        }
+        
+        [class^="icon-"] {
+            font-size: rem(34);
+            
+            @media screen and ( max-width: $base + px ) {
+                font-size: get-vw-base(34);
+            }
+            
+            @media screen and ( max-width: $smartphone + px ) {
+                font-size: rem(20);
+            }
+            
+            &.icon-mail,
+            &.icon-phone {
+                font-size: rem(30);
+                
+                @media screen and ( max-width: $base + px ) {
+                    font-size: get-vw-base(30);
+                    
+                    @media screen and ( max-width: $smartphone + px ) {
+                        font-size: rem(16);
+                    }
+                }
+            }
+        }
+    }
+
+    &__map {
+        @extend %rel;
+        width: grid(1270, 1920);
+        
+        @media screen and ( max-width: $tablet + px ) {
+            width: 50%;
+        }
+        
+        @media screen and ( max-width: $smartphone + px ) {
+            width: 100%;
+            height: 360px;
+        }
+        
+        &:after {
+            @extend %abs;
+            @extend %abs-y;
+            @extend %abs-after;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 45px 50px 45px 0;
+            border-color: transparent $c-blue2 transparent transparent;
+            
+            @media screen and ( max-width: $base + px ) {
+                border-width: get-vw-base(45) get-vw-base(50) get-vw-base(45) 0;
+            }
+            
+            @media screen and ( max-width: $smartphone + px ) {
+                display: none;
+            }
+        }
+    }
+    
+    .o-header {
+        margin: 0;
+        
+        &--secondary {
+            white-space: nowrap;
+        }
+    }
+}

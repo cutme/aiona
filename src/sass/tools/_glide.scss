@@ -1,0 +1,79 @@
+.glide {
+
+    &__arrow {
+        @extend %abs;
+        top: 50%;
+        width: 30px;
+        height: 40px;
+        background: {
+            image: url(../img/assets/arrow-left.png);
+            repeat: no-repeat;
+        }
+        
+        &--left {
+            left: 70px;
+            transform: translateY(-50%);
+            
+            @media screen and ( max-width: $base + 80px ) {
+                left: 25px;
+            }
+        }
+        
+        &--right {
+            right: 70px;
+            transform: translateY(-50%) scaleX(-1);
+            
+            @media screen and ( max-width: $base + 80px ) {
+                right: 25px;
+            }
+        }
+    }
+
+    &__bullet {
+       width: 26px; height: 24px;
+       background: {
+            repeat: no-repeat;
+            size: contain;
+       }
+       margin: 0 10px;
+
+       &--1 {
+           background-image: url(../img/assets/dot-1.png);
+       }
+       
+       &--2 {
+           background-image: url(../img/assets/dot-2.png);
+       }
+       
+       &--3 {
+           background-image: url(../img/assets/dot-3.png);
+       }
+       
+       @media screen and ( max-width: $tablet_portrait + px ) {
+            margin: 0 5px;
+            width: 20px; height: 20px;
+       }
+    }
+
+    &__bullets {
+        @extend %abs;
+        left: 0;
+        bottom: 60px;
+        width: 100%;
+        z-index: 15;
+        text-align: center;
+        
+        @media screen and ( max-width: 1440px ) {
+            bottom: 40px;
+        }
+        
+        @media screen and ( max-width: $tablet + px ) {
+            bottom: 30px;
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            bottom: 20px;
+        }
+    }
+}
+

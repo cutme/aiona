@@ -1,0 +1,49 @@
+.o-header {
+
+    &--primary {
+        margin-bottom: .9em;
+        font: {
+            family: $poppins;
+            size: rem(48.83);
+            weight: $bold;
+        }
+        
+        @media screen and ( max-width: $base + px ) {
+            font-size: get-vw-base(48.83);
+        }
+        
+        @media screen and ( max-width: $smartphone_portrait + px ) {
+            font-size: rem(14);
+        }
+    }
+    
+    &--secondary {
+        margin-bottom: 1em;
+        font: {
+            family: $poppins;
+            size: rem(33.33);
+            weight: $medium;
+        }
+        
+        @media screen and ( max-width: $base + px ) {
+            font-size: get-vw-base(33.33);
+        }
+        
+        @media screen and ( max-width: $smartphone + px ) {
+            font-size: rem(18);
+        }
+    }
+    
+    &--third {
+        margin-bottom: 1.4em;
+        font: {
+            family: $poppins;
+            size: rem(19.4);
+            weight: $bold;
+        }
+        
+        @media screen and ( max-width: $smartphone + px ) {
+            font-size: rem(14.15);
+        }
+    }
+}

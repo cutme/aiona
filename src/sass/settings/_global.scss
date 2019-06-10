@@ -1,0 +1,44 @@
+// Fonts
+
+$icomoon:         'icomoon';
+$fira:            'Fira Sans', sans-serif;
+$poppins:         'Poppins', sans-serif;
+$text:		      $fira;
+
+
+// Font weights
+
+$light:             300;
+$regular:			400;
+$medium:			500;
+$bold:              700;
+
+
+$z-index: (
+    hamburger:      10,
+	top           : 10,
+	gotop         : 20,
+	nav           : 9
+);
+
+// Paths
+
+$path_img:          '../img';
+$path_fonts:        '../fonts';
+
+
+
+// Default
+
+$base-font-size:	15.52;
+$base:				1218;
+
+
+
+// RWD
+
+$desktop:              1920;
+$tablet:               1024;
+$tablet_portrait:       768;
+$smartphone:			640;
+$smartphone_portrait:	500;

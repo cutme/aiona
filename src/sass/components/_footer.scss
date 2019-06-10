@@ -1,0 +1,21 @@
+.c-footer {
+    background-color: $c-blue1;
+    padding: 90px 0 190px 0;
+    
+    @media screen and ( max-width: $base + px ) {
+        padding: get-vw-base(90) 0 get-vw-base(190) 0;
+    }
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        padding: 70px 0;
+    }
+    
+    .o-logo {
+        width: 201px;
+        margin: 0 auto;
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            width: 130px;
+        }
+    }
+}
