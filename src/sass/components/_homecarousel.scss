@@ -33,7 +33,7 @@
             
             &--text {
                 @media screen and  ( min-width: $tablet_portrait + 1px ) {
-                    padding-left: 90px;
+                    padding-left: 70px;
                 }
                 
                 @media screen and ( max-width: $tablet_portrait + px ) {
@@ -127,7 +127,7 @@
                             text-transform: uppercase;
                             font-size: rem(62.38);
                             
-                            @media screen and ( max-width: $base + px) {
+                            @media screen and ( max-width: $base + 80px) {
                                 font-size: get-vw-base(62.38);
                             }
                             
@@ -135,7 +135,8 @@
                                 font-size: rem(28);
                             }
                             
-                            &:after {
+                            /*
+&:after {
                                 @extend %abs;
                                 @extend %abs-after;
                                 transform: translate3d(100%, 20px, 0)  translate3d(40px, 0, 0);
@@ -157,6 +158,7 @@
                                     transform: translate3d(100%, 40px, 0)  translate3d(0, 0, 0);
                                 }                                               
                             }
+*/
                         }
                     }
         
@@ -167,7 +169,7 @@
                             size: rem(49.91);
                         }
                         
-                        @media screen and ( max-width: 1280px ) {
+                        @media screen and ( max-width: $base + 80px ) {
                             font-size: get-vw-base(49.91);
                         }
                         
@@ -228,7 +230,7 @@
                                 weight: $medium;
                             }
                             
-                            @media screen and ( max-width: $base + px) {
+                            @media screen and ( max-width: $base + 80px) {
                                 font-size: get-vw-base(66.98);
                             } 
                             
@@ -243,7 +245,7 @@
                         line-height: 1.2em;
                         font-size: rem(50.51);
                         
-                        @media screen and ( max-width: 1280px ) {
+                        @media screen and ( max-width: $base + 80px ) {
                             font-size: get-vw-base(49.91);
                         }
                         
