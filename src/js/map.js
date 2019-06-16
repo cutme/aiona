@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const initMap = function() {
         loadGoogleMapsApi({
-            key: 'AIzaSyDukwKR-n48tHvUT43V_tv5QjHW0jSeWpI'
+            key: 'AIzaSyCd1dXdoqsEhOYt-CYxjaY46gb3udo0RFo'
             }).then(function (googleMaps) {
             
             const el = document.querySelector('.js-map'),
