@@ -11,6 +11,7 @@ const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const HtmlCriticalPlugin = require("html-critical-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 console.log(process.env.NODE_ENV);
 
@@ -69,21 +70,9 @@ module.exports = {
         
         plugins.js,
         
-        /*
-new HtmlCriticalPlugin({
-            base: path.join(path.resolve(__dirname), '../dist/'),
-            src: 'index.html',
-            dest: 'index.html',
-            inline: true,
-            minify: true,
-            extract: true,
-            width: 375,
-            height: 565,
-            penthouse: {
-                blockJSRequests: false,
-            }
-        })
-*/
+        new CopyWebpackPlugin([
+            { from: path.resolve(__dirname, '../src/favicon.ico'), to: path.resolve(__dirname, '../dist/favicon.ico') },
+        ])
     ]),
 	
 	optimization: {

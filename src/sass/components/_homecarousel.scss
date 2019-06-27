@@ -1,7 +1,9 @@
 .c-homecarousel {
     @extend %rel; z-index: 2;
-    height: 816px;
+//    height: 816px;
     margin-bottom: 40px;
+    
+    height: calc(100vh - 160px);
     
     @media screen and ( max-width: 1440px ) {
         height: 700px;
@@ -33,7 +35,7 @@
             
             &--text {
                 @media screen and  ( min-width: $tablet_portrait + 1px ) {
-                    padding-left: 70px;
+                    padding-left: 170px;
                 }
                 
                 @media screen and ( max-width: $tablet_portrait + px ) {
@@ -59,7 +61,8 @@
     .glide {
         &__slide {
             @extend %rel;
-            height: 816px;
+            //height: 816px;
+            height: calc(100vh - 160px);
             background: {
                 position: center top;
                 size: auto 100%;
@@ -125,40 +128,15 @@
                         span {
                             @extend %rel;
                             text-transform: uppercase;
-                            font-size: rem(62.38);
+                            font-size: rem(52.38);
                             
                             @media screen and ( max-width: $base + 80px) {
-                                font-size: get-vw-base(62.38);
+                                font-size: get-vw-base(52.38);
                             }
                             
                             @media screen and ( max-width: $tablet_portrait + px) {
                                 font-size: rem(28);
                             }
-                            
-                            /*
-&:after {
-                                @extend %abs;
-                                @extend %abs-after;
-                                transform: translate3d(100%, 20px, 0)  translate3d(40px, 0, 0);
-                                right: 0; top: 0;
-                                width: 70px; height: 48px;
-                                background: {
-                                    image: url(../img/assets/arrow-draw.png);
-                                    repeat: no-repeat;
-                                    size: contain;
-                                }  
-                                
-                                @media screen and ( max-width: $tablet + px ) {
-                                    width: 50px;
-                                    transform: translate3d(100%, 20px, 0)  translate3d(20px, 0, 0);
-                                }
-                                
-                                @media screen and ( max-width: $tablet_portrait + px ) {
-                                    width: 30px;
-                                    transform: translate3d(100%, 40px, 0)  translate3d(0, 0, 0);
-                                }                                               
-                            }
-*/
                         }
                     }
         
@@ -226,12 +204,12 @@
                         span {
                             @extend %rel;
                             font: {
-                                size: rem(66.98);
+                                size: rem(56.98);
                                 weight: $medium;
                             }
                             
                             @media screen and ( max-width: $base + 80px) {
-                                font-size: get-vw-base(66.98);
+                                font-size: get-vw-base(56.98);
                             } 
                             
                             @media screen and ( max-width: $tablet_portrait + px ) {
@@ -246,7 +224,7 @@
                         font-size: rem(50.51);
                         
                         @media screen and ( max-width: $base + 80px ) {
-                            font-size: get-vw-base(49.91);
+                            font-size: get-vw-base(39.91);
                         }
                         
                         @media screen and ( max-width: $tablet_portrait + px ) {

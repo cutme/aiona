@@ -1,13 +1,13 @@
 .c-footer {
     background-color: $c-blue1;
-    padding: 90px 0 190px 0;
+    padding: 40px 0 90px 0;
     
     @media screen and ( max-width: $base + px ) {
-        padding: get-vw-base(90) 0 get-vw-base(190) 0;
+        padding: get-vw-base(40) 0 get-vw-base(90) 0;
     }
     
     @media screen and ( max-width: $tablet_portrait + px ) {
-        padding: 70px 0;
+        padding: 40px 0;
     }
     
     .o-logo {
