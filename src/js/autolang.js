@@ -75,7 +75,9 @@ document.addEventListener('DOMContentLoaded',function() {
     
     };
     
-    init();
+    if (window.location.protocol != 'file:' ) {
+        init();
+    }
    
 
 }, false);

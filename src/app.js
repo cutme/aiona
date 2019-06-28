@@ -5,7 +5,7 @@ require('./js/init.js');
 require('./js/carousels.js');
 require('./js/helpers.js');
 
-//require('./js/autolang.js');
+require('./js/autolang.js');
 require('./js/glightbox.js');
 require('./js/gototarget.js');
 require('./js/gotop.js');
